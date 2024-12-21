@@ -1,0 +1,198 @@
+input[type="text"] {
+  width: 40%; /* Ubah lebar input */
+  padding: 0.5em;
+  margin: 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+button {
+  font-family: inherit;
+  font-weight: 500;
+  background-color: var(--btn-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: var(--btn-color-hover);
+}
+
+:root {
+  --font-color: #404040;
+  --font-color-inverted: #f9f9f9;
+  --border-color: #e1e3e1;
+
+  --purple-primary: #a06dfd;
+  --purple-dark: #8d5fe1;
+  --purple-light: #dbc7ff;
+  --purple-lighter: #eadfff;
+  --btn-color: #0079fa;
+  --btn-color-border: #404040;
+  --btn-color-hover: #0363ca;
+}
+
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 1em;
+  font-size: 14px;
+  font-family: "Gotham-Rounded", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  color: #404040;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Gotham-Rounded", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+}
+
+p {
+  line-height: 22px;
+  max-width: 700px;
+}
+
+a {
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+a:visited,
+a:active,
+a:focus {
+  color: var(--font-color);
+}
+
+a:hover {
+  color: #000000;
+}
+
+small {
+  display: block;
+  font-size: 11px;
+  opacity: 0.75;
+  margin: 5px 3px;
+}
+
+ol {
+  line-height: 25px;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  font-family: "Gotham-Rounded", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: auto;
+  background-color: var(--btn-color);
+  color: white !important;
+  height: 30px;
+  min-height: 30px;
+  max-height: 30px;
+  line-height: 18px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  outline: none;
+  text-decoration: none;
+  border: 1px solid var(--btn-color-border);
+  padding: 0 10px;
+  transition: background-color 200ms ease-in-out;
+}
+
+.btn.small {
+  font-size: 12px;
+  padding: 0 5px;
+  height: 26px;
+  min-height: 26px;
+}
+
+/* options.css */
+p {
+  line-height: 20px;
+  font-size: 14px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-content {
+  display: none;
+}
+
+.nav-content.active {
+  display: block;
+}
+
+.hidden,
+#error:empty {
+  display: none;
+}
+
+#error {
+  font-weight: 600;
+  color: red;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button.upgrade {
+  background-color: #0079fa;
+}
+
+button.upgrade:hover {
+  background-color: #0363ca;
+}
+
+small.no-license {
+  font-size: 14px;
+  margin-bottom: 1em;
+}
+
+button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
